@@ -18,6 +18,8 @@ NetworkManager-gnome
 nss-mdns
 claws-mail
 
+gsmartcontrol
+
 # we don't include @office so that we don't get OOo.  but some nice bits
 abiword
 gnumeric

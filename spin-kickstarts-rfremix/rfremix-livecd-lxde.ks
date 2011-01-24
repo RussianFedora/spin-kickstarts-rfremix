@@ -17,6 +17,8 @@ lxlauncher
 obconf
 gdm
 
+gsmartcontrol
+
 # internet
 firefox
 sylpheed
