@@ -6,7 +6,7 @@ Release:    2%{?dist}
 License:    GPLv2+
 Group:      Applications/System
 URL:        http://russianfedora.ru
-Source0:    %{name}-%{version}.tar.bz2
+Source0:    ttps://github.com/Tigro/Tarballs/raw/master/%{name}-%{version}.tar.bz2
 Patch0:     spin-kickstarts-rfremix-14.1.4-nosubversion.patch
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
