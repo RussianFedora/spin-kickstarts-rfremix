@@ -1,13 +1,12 @@
 Summary:    Kickstart files and templates for creating your own RFRemix Spins
 Name:       spin-kickstarts-rfremix
-Version:    14.1.4
-Release:    2%{?dist}
+Version:    14.1.6
+Release:    1%{?dist}
 
 License:    GPLv2+
 Group:      Applications/System
 URL:        http://russianfedora.ru
 Source0:    ttps://github.com/Tigro/Tarballs/raw/master/%{name}-%{version}.tar.bz2
-Patch0:     spin-kickstarts-rfremix-14.1.4-nosubversion.patch
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildArch:  noarch
@@ -24,7 +23,6 @@ A number of kickstarts you can use to create customized (Russian Fedora) Spins
 
 %prep
 %setup -q
-%patch0 -p1 -b .nosubversion
 
 
 %build
@@ -49,6 +47,14 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Sun Mar 13 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 14.1.6-1
+- remove kdeaccessibility from livecd
+- yumex is default package manager for LXDE
+
+* Thu Mar 10 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 14.1.5-1
+- exclude subversion and qt from everything repo
+- added rt3090, rt3062 and nvidia-96xx kernel modules
+
 * Thu Dec 30 2010 Arkady L. Shane <ashejn@yandex-team.ru> - 14.1.4-2
 - exclude subversion from fedora repo
 
