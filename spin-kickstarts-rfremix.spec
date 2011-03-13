@@ -6,7 +6,7 @@ Release:    1%{?dist}
 License:    GPLv2+
 Group:      Applications/System
 URL:        http://russianfedora.ru
-Source0:    ttps://github.com/Tigro/Tarballs/raw/master/%{name}-%{version}.tar.bz2
+Source0:    https://github.com/Tigro/Tarballs/raw/master/%{name}-%{version}.tar.bz2
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildArch:  noarch
