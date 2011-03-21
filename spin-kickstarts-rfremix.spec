@@ -1,12 +1,12 @@
 Summary:    Kickstart files and templates for creating your own RFRemix Spins
 Name:       spin-kickstarts-rfremix
-Version:    14.1.6
+Version:    15.0.0
 Release:    1%{?dist}
 
 License:    GPLv2+
 Group:      Applications/System
 URL:        http://russianfedora.ru
-Source0:    https://github.com/Tigro/Tarballs/raw/master/%{name}-%{version}.tar.bz2
+Source0:    http://koji.russianfedora.ru/storage/spin-kickstarts-rfremix/%{name}-%{version}.tar.bz2
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildArch:  noarch
@@ -47,6 +47,10 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon Mar 21 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 15.0.0-1
+- merge fedora-install-fedora.ks and rfremix-install-rfremix.ks
+- enable update-testing repo
+
 * Sun Mar 13 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 14.1.6-1
 - remove kdeaccessibility from livecd
 - yumex is default package manager for LXDE
