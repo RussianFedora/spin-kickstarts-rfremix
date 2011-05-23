@@ -1,6 +1,6 @@
 Summary:    Kickstart files and templates for creating your own RFRemix Spins
 Name:       spin-kickstarts-rfremix
-Version:    15.0.1
+Version:    15.0.2
 Release:    1%{?dist}.R
 
 License:    GPLv2+
@@ -47,6 +47,12 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon May 23 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 15.0.2-1.R
+- drop rfremix-install-rawhide-rfremix.ks
+- added prebuild kmods
+- many fixes
+- drop gnome-games
+
 * Mon Apr 18 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 15.0.1-1.R
 - added full LibreOffice to GNOME Live
 - update KDE Live
