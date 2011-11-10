@@ -6,7 +6,7 @@ Release:    2%{?dist}.R
 License:    GPLv2+
 Group:      Applications/System
 URL:        http://russianfedora.ru
-Source0:    http://koji.russianfedora.ru/storage/spin-kickstarts-rfremix/%{name}-%{version}.tar.bz2
+Source0:    http://download.rfremix.ru/storage/spin-kickstarts-rfremix/%{name}-%{version}.tar.bz2
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildArch:  noarch
