@@ -1,12 +1,12 @@
 Summary:    Kickstart files and templates for creating your own RFRemix Spins
 Name:       spin-kickstarts-rfremix
 Version:    16.0.0
-Release:    1%{?dist}.R
+Release:    2%{?dist}.R
 
 License:    GPLv2+
 Group:      Applications/System
 URL:        http://russianfedora.ru
-Source0:    http://download.rfremix.ru/storage/spin-kickstarts-rfremix/%{name}-%{version}.tar.bz2
+Source0:    http://koji.russianfedora.ru/storage/spin-kickstarts-rfremix/%{name}-%{version}.tar.bz2
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildArch:  noarch
@@ -47,6 +47,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Thu Oct 10 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 16.0.0-2.R
+- added grub2 stuff
+
 * Mon Sep 26 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 16.0.0-1.R
 - sync with upstream
 - drop kmod-wl in Beta
