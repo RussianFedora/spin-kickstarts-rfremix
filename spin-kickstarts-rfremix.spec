@@ -1,32 +1,27 @@
 Summary:    Kickstart files and templates for creating your own RFRemix Spins
 Name:       spin-kickstarts-rfremix
-Version:    16.0.0
-Release:    2%{?dist}.R
+Version:    18.0.0
+Release:    1%{?dist}
 
 License:    GPLv2+
 Group:      Applications/System
 URL:        http://russianfedora.ru
 Source0:    http://download.rfremix.ru/storage/spin-kickstarts-rfremix/%{name}-%{version}.tar.bz2
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildArch:  noarch
 
-Obsoletes:  spin-kickstarts-russianfedoraremix
-Obsoletes:  spin-kickstarts-russianfedora
+Obsoletes:  spin-kickstarts-russianfedoraremix < 12
+Obsoletes:  spin-kickstarts-russianfedora < 12
 
 Provides:   rfremix-kickstarts = %{version}
 
-
 %description
-A number of kickstarts you can use to create customized (Russian Fedora) Spins
-
+A number of kickstarts you can use to create customized (RFRemix) Spins.
 
 %prep
 %setup -q
 
-
 %build
-
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -34,19 +29,16 @@ rm -rf $RPM_BUILD_ROOT
 install -m 755 -dD $RPM_BUILD_ROOT%{_datadir}/spin-kickstarts/
 install -m 644 *.ks $RPM_BUILD_ROOT%{_datadir}/spin-kickstarts/
 
-
-%clean
-rm -rf $RPM_BUILD_ROOT
-
-
 %files
-%defattr(-,root,root,-)
 %doc COPYING AUTHORS ChangeLog
 %dir %{_datadir}/spin-kickstarts/
 %{_datadir}/spin-kickstarts/rfremix*.ks
 
 
 %changelog
+* Mon Jan 14 2013 Arkady L. Shane <ashejn@russianfedora.ru> - 18.0.0-1.R
+- final release
+
 * Thu Oct 10 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 16.0.0-2.R
 - added grub2 stuff
 
