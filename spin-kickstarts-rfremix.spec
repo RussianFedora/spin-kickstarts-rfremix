@@ -1,12 +1,12 @@
 Summary:    Kickstart files and templates for creating your own RFRemix Spins
 Name:       spin-kickstarts-rfremix
-Version:    18.0.0
-Release:    1%{?dist}
+Version:    20.0.0
+Release:    0.1.git265e0da7%{?dist}
 
 License:    GPLv2+
 Group:      Applications/System
 URL:        http://russianfedora.ru
-Source0:    http://download.rfremix.ru/storage/spin-kickstarts-rfremix/%{name}-%{version}.tar.bz2
+Source0:    %{name}-%{version}.tar.bz2
 
 BuildArch:  noarch
 
@@ -36,10 +36,13 @@ install -m 644 *.ks $RPM_BUILD_ROOT%{_datadir}/spin-kickstarts/
 
 
 %changelog
+* Thu Nov  7 2013 Arkady L. Shane <ashejn@russianfedora.ru> - 20.0.0-0.1.git265e0da7.R
+- create initial package for RFRemix 20
+
 * Mon Jan 14 2013 Arkady L. Shane <ashejn@russianfedora.ru> - 18.0.0-1.R
 - final release
 
-* Thu Oct 10 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 16.0.0-2.R
+* Mon Oct 10 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 16.0.0-2.R
 - added grub2 stuff
 
 * Mon Sep 26 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 16.0.0-1.R
@@ -112,13 +115,13 @@ install -m 644 *.ks $RPM_BUILD_ROOT%{_datadir}/spin-kickstarts/
 * Tue Oct 26 2010 Arkady L. Shane <ashejn@yandex-team.ru> - 14.0.8-1
 - some fixes of lxde and kde kickstarts
 
-* Tue Oct 20 2010 Arkady L. Shane <ashejn@yandex-team.ru> - 14.0.7-1.1
+* Wed Oct 20 2010 Arkady L. Shane <ashejn@yandex-team.ru> - 14.0.7-1.1
 - added P: rfremix-kickstarts
 
-* Tue Oct 20 2010 Arkady L. Shane <ashejn@yandex-team.ru> - 14.0.7-1
+* Wed Oct 20 2010 Arkady L. Shane <ashejn@yandex-team.ru> - 14.0.7-1
 - fix version in live-base ks
 
-* Tue Oct 20 2010 Arkady L. Shane <ashejn@yandex-team.ru> - 14.0.6-1
+* Wed Oct 20 2010 Arkady L. Shane <ashejn@yandex-team.ru> - 14.0.6-1
 - fix release version in mirror urls
 - optimize font exclusion
 - remove kftpgrabber
@@ -144,7 +147,7 @@ install -m 644 *.ks $RPM_BUILD_ROOT%{_datadir}/spin-kickstarts/
 * Mon Sep 27 2010 Arkady L. Shane <ashejn@yandex-team.ru> - 14.0.2-1
 - disable updates-testing firstboot
 
-* Fri Sep 21 2010 Arkady L. Shane <ashejn@yandex-team.ru> - 14.0.1-1
+* Tue Sep 21 2010 Arkady L. Shane <ashejn@yandex-team.ru> - 14.0.1-1
 - drop many packages to place Fedora Live on 700M cd
 
 * Tue Sep 21 2010 Arkady L. Shane <ashejn@yandex-team.ru> - 14.0.0-1
@@ -362,7 +365,7 @@ install -m 644 *.ks $RPM_BUILD_ROOT%{_datadir}/spin-kickstarts/
 * Fri Mar 13 2009 Arkady L. Shane <ashejn@yandex-team.ru> 0.6.1-1
 - update to 0.6.1
 
-* Tue Mar 12 2009 Arkady L. Shane <ashejn@yandex-team.ru> 0.6-1
+* Thu Mar 12 2009 Arkady L. Shane <ashejn@yandex-team.ru> 0.6-1
 - update to 0.6
 
 * Tue Feb 24 2009 Arkady L. Shane <ashejn@yandex-team.ru> 0.5-1
