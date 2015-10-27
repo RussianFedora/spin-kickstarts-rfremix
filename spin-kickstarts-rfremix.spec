@@ -1,7 +1,7 @@
 Summary:    Kickstart files and templates for creating your own RFRemix Spins
 Name:       spin-kickstarts-rfremix
-Version:    20.0.0
-Release:    0.1.git265e0da7%{?dist}
+Version:    23.0.0
+Release:    1%{?dist}
 
 License:    GPLv2+
 Group:      Applications/System
@@ -36,6 +36,9 @@ install -m 644 *.ks $RPM_BUILD_ROOT%{_datadir}/spin-kickstarts/
 
 
 %changelog
+* Tue Oct 27 2015 Arkady L. Shane <ashejn@russianfedora.ru> - 23.0.0-1.R
+- update for RFRemix 23
+
 * Thu Nov  7 2013 Arkady L. Shane <ashejn@russianfedora.ru> - 20.0.0-0.1.git265e0da7.R
 - create initial package for RFRemix 20
 
