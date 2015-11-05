@@ -36,7 +36,7 @@ install -m 644 *.ks $RPM_BUILD_ROOT%{_datadir}/spin-kickstarts/
 
 
 %changelog
-* Tue Oct 27 2015 Arkady L. Shane <ashejn@russianfedora.ru> - 23.0.0-1.R
+* Thu Nov  5 2015 Arkady L. Shane <ashejn@russianfedora.ru> - 23.0.0-1.R
 - update for RFRemix 23
 
 * Thu Nov  7 2013 Arkady L. Shane <ashejn@russianfedora.ru> - 20.0.0-0.1.git265e0da7.R
