@@ -5,7 +5,7 @@ Release:    1%{?dist}
 
 License:    GPLv2+
 Group:      Applications/System
-URL:        http://russianfedora.ru
+URL:        https://github.com/Tigro/spin-kickstarts-rfremix
 Source0:    %{name}-%{version}.tar.bz2
 
 BuildArch:  noarch
