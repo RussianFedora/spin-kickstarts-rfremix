@@ -20,19 +20,22 @@ A number of kickstarts you can use to create customized (RFRemix) Spins.
 
 %prep
 %setup -q
+# set proper path
+sed -i 's@CONFIGPATH=.*@CONFIGPATH="/usr/share/spin-kickstarts-rfremix/"@g' create-live
 
 %build
 
 %install
-rm -rf $RPM_BUILD_ROOT
-
-install -m 755 -dD $RPM_BUILD_ROOT%{_datadir}/spin-kickstarts/
-install -m 644 *.ks $RPM_BUILD_ROOT%{_datadir}/spin-kickstarts/
+mkdir -p %{buildroot}%{_datadir}/spin-kickstarts-rfremix/ %{buildroot}%{_bindir} 
+cp *.ks %{buildroot}%{_datadir}/spin-kickstarts-rfremix/
+cp -r spin-kickstarts %{buildroot}%{_datadir}/spin-kickstarts-rfremix/
+install -m 755 create-live %{buildroot}%{_bindir}/create-live
 
 %files
 %doc COPYING AUTHORS ChangeLog
-%dir %{_datadir}/spin-kickstarts/
-%{_datadir}/spin-kickstarts/rfremix*.ks
+%{_bindir}/create-live
+%dir %{_datadir}/spin-kickstarts-rfremix/
+%{_datadir}/spin-kickstarts-rfremix/*
 
 
 %changelog
