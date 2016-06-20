@@ -1,6 +1,6 @@
 Summary:    Kickstart files and templates for creating your own RFRemix Spins
 Name:       spin-kickstarts-rfremix
-Version:    23.0.0
+Version:    24.0.0
 Release:    1%{?dist}
 
 License:    GPLv2+
@@ -29,16 +29,19 @@ sed -i 's@CONFIGPATH=.*@CONFIGPATH="/usr/share/spin-kickstarts-rfremix/"@g' crea
 mkdir -p %{buildroot}%{_datadir}/spin-kickstarts-rfremix/ %{buildroot}%{_bindir} 
 cp *.ks %{buildroot}%{_datadir}/spin-kickstarts-rfremix/
 cp -r spin-kickstarts %{buildroot}%{_datadir}/spin-kickstarts-rfremix/
-install -m 755 create-live %{buildroot}%{_bindir}/create-live
+install -m 755 create-live* %{buildroot}%{_bindir}/
 
 %files
 %doc COPYING AUTHORS ChangeLog
-%{_bindir}/create-live
+%{_bindir}/create-live*
 %dir %{_datadir}/spin-kickstarts-rfremix/
 %{_datadir}/spin-kickstarts-rfremix/*
 
 
 %changelog
+* Mon Jun 20 2016 Arkady L. Shane <ashejn@russianfedora.ru> - 24.0.0-1.R
+- update for RFRemix 24
+
 * Thu Nov  5 2015 Arkady L. Shane <ashejn@russianfedora.ru> - 23.0.0-1.R
 - update for RFRemix 23
 
