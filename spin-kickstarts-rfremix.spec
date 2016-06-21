@@ -1,6 +1,6 @@
 Summary:    Kickstart files and templates for creating your own RFRemix Spins
 Name:       spin-kickstarts-rfremix
-Version:    24.0.0
+Version:    24.0.1
 Release:    1%{?dist}
 
 License:    GPLv2+
@@ -39,6 +39,9 @@ install -m 755 create-live* %{buildroot}%{_bindir}/
 
 
 %changelog
+* Tue Jun 21 2016 Arkady L. Shane <ashejn@russianfedora.ru> - 24.0.1-1.R
+- update urls for new RPM Fusion
+
 * Mon Jun 20 2016 Arkady L. Shane <ashejn@russianfedora.ru> - 24.0.0-1.R
 - update for RFRemix 24
 
